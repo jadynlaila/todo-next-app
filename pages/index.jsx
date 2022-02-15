@@ -1,19 +1,7 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
 import { Message } from "semantic-ui-react";
-
-import {
-  user1,
-  user2,
-  user3,
-  user4,
-  user5,
-  user6,
-  user7,
-  user8,
-  user9,
-  user10,
-} from "./sort";
+import Sort from './sort'
 
 const Home = () => {
   const [posts, setPosts] = useState([]);
@@ -25,7 +13,7 @@ const Home = () => {
 
   return (
     <>
-      <user1/>
+      <Sort />
     </>
   );
 };
